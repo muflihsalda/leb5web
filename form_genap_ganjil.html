@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Genap Ganjil</title>
+    <script>
+      function cekBilangan() {
+        var val = document.kirim.T1.value;
+        document.kirim.T2.value =
+          val % 2 === 0 ? "Bilangan Genap" : "Bilangan Ganjil";
+      }
+    </script>
+  </head>
+  <body>
+    <form name="kirim">
+      <input type="text" name="T1" />
+      <input type="text" name="T2" readonly />
+      <input type="button" value="Tebak" onclick="cekBilangan()" />
+    </form>
+  </body>
+</html>

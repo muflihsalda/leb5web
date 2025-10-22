@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Button Warna</title>
+    <script>
+      function ubahWarnaBG(warna) {
+        document.bgColor = warna;
+      }
+
+      function ubahWarnaTeks(warna) {
+        document.fgColor = warna;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Tes Ubah Warna</h1>
+    <form>
+      <input
+        type="button"
+        value="Latar Belakang Hijau"
+        onclick="ubahWarnaBG('GREEN')"
+      />
+      <input
+        type="button"
+        value="Latar Belakang Putih"
+        onclick="ubahWarnaBG('WHITE')"
+      />
+      <input
+        type="button"
+        value="Teks Kuning"
+        onclick="ubahWarnaTeks('YELLOW')"
+      />
+      <input type="button" value="Teks Biru" onclick="ubahWarnaTeks('BLUE')" />
+    </form>
+
+    <script>
+      document.write("Dimodifikasi terakhir pada: " + document.lastModified);
+    </script>
+  </body>
+</html>
